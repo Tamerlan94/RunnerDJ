@@ -1,0 +1,52 @@
+{% extends 'runner/base.html' %}
+{% load static %}
+
+{% block title %} Video {% endblock %}
+
+{% block content %}
+<main>
+    <div class="container">
+        <div class="mid-box-runplun">
+            <a href="#">
+                <div class="g-card video-card">
+                    <div class="g-side">
+                        <div class="back">
+                            <img src="{% static 'runner/assets/icons/youtube.png' %}" width="30px" alt="book">
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h4>Суставная разминка перед пробежкой</h4>
+                        <p>5 минут</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="g-card video-card">
+                    <div class="g-side">
+                        <div class="back">
+                            <img src="{% static 'runner/assets/icons/youtube.png' %}" width="30px" alt="book">
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h4>Растяжка мышц после пробежки</h4>
+                        <p>5 минут</p>
+                    </div>
+                </div>
+            </a>
+           <a href="#">
+                <div class="g-card video-card">
+                    <div class="g-side">
+                        <div class="back">
+                            <img src="{% static 'runner/assets/icons/youtube.png' %}" width="30px" alt="book">
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h4>Пример бега в зеленой зоне</h4>
+                        <p>1 минута</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
+{% endblock %}

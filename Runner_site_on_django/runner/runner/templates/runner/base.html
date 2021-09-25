@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="{% static 'runner/assets/icons/favicon.png' %}">
+    <!-- Bootstrap CSS -->
+    <link href="{% static 'runner/assets/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'runner/assets/css/style.css' %}" rel="stylesheet">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&family=Roboto+Slab&display=swap"
+          rel="stylesheet">
+</head>
+<body id="bg" style="background-image: url('{% static 'runner/assets/images/backstory2.png' %}');">
+
+
+<div class="wrapper">
+    <!-- Header -->
+    <header class="page-header">
+        <div class="container">
+            <div class="pre-header">
+                <div class="title-top">
+                    <h2>FIND YOUR</h2>
+                    <h2>"Зеленая книга"</h2>
+                </div>
+                <div class="title-mid">
+                    <h1>GREENZONE</h1>
+                    <h3>Методическое пособие по подготовке к городским забегам и для души</h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <main class="page-body">
+        {% block content %}
+
+        {% endblock %}
+    </main>
+    <footer class="page-footer">
+        <div class="sub-footer">
+            <p>CodeAgain production</p>
+            <p>2021 - {% now "Y" %}</p>
+        </div>
+    </footer>
+</div>
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="{% static 'runner/assets/js/bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>

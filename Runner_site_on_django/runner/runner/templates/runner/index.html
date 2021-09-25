@@ -1,0 +1,102 @@
+{% extends 'runner/base.html' %}
+{% load static %}
+
+{% block title %} Runner {% endblock %}
+
+{% block content %}
+<main>
+    <div class="container">
+        <div class="mid-box">
+            <a href="#">
+                <div class="g-card">
+                    <div class="g-side">
+                        <div class="back">
+                            <img src="{% static 'runner/assets/icons/book.png' %}" width="30px" alt="book">
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h4>Зеленая книга | Find Your Green Zone</h4>
+                        <p>Обучающий буклет по бегу для начинающих</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="g-card">
+                    <div class="g-side">
+                        <div class="back">
+                            <img src="{% static 'runner/assets/icons/youtube.png' %}" width="30px" alt="book">
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h4>Обучающий фильм по бегу для начиющих</h4>
+                        <p>Расширенное дополнение к буклету</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="g-card g-gradient">
+                    <div class="g-side">
+                        <div class="back">
+                            <img src="{% static 'runner/assets/icons/running.png' %}" width="30px" alt="book">
+                        </div>
+                    </div>
+                    <div class="g-card-body g-ref">
+                        <h4>Зарегистироваться на Алматы Марафон</h4>
+                    </div>
+                </div>
+            </a>
+            <a href="{% url 'runplan:runplan' %}">
+                <div class="g-card">
+                    <div class="g-side">
+                        <div class="back">
+                            <img src="{% static 'runner/assets/icons/clipboard.png' %}" width="30px" alt="book">
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h4>Скачать беговой план</h4>
+                        <p>Самостоятельная подготовка к городским забегам</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="g-card">
+                    <div class="g-side">
+                        <div class="back">
+                            <img src="{% static 'runner/assets/icons/medal.png' %}" width="30px" alt="book">
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                            <h4>Живые тренировки в команде ANR Pro Runners</h4>
+                            <p>3 раза в неделю, в Алматы, платно.</p>
+                    </div>
+                </div>
+            </a>
+            <a href="{% url 'video' %}">
+                <div class="g-card">
+                    <div class="g-side">
+                        <div class="back">
+                            <img src="{% static 'runner/assets/icons/film.png' %}" width="30px" alt="book">
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                            <h4>Видео примеры упражнений</h4>
+                            <p>Разминка, медленный бег, заминка</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="g-card g-card-last">
+                    <div class="g-side">
+                        <div class="back">
+                            <img src="{% static 'runner/assets/icons/telegram.png' %}" width="30px" alt="book">
+                        </div>
+                    </div>
+                    <div class="g-card-body g-card-last">
+                        <h4>Добавиться в группу Telegram</h4>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
+{% endblock %}

@@ -1,0 +1,52 @@
+{% extends 'runner/base.html' %}
+{% load static %}
+
+{% block title %} Run plan {% endblock %}
+
+{% block content %}
+<main>
+    <div class="container">
+        <div class="mid-box-runplun">
+            <a href="#">
+                <div class="g-card runner-card">
+                    <div class="g-side">
+                        <div class="back">
+                            <img src="{% static 'runner/assets/icons/clipboard.png' %}" width="30px" alt="book">
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h4>Мои первые 5 км за 4 недели</h4>
+                        <p>Скачать PDF</p>
+                    </div>
+                </div>
+            </a>
+            <a href="#">
+                <div class="g-card runner-card">
+                    <div class="g-side">
+                        <div class="back">
+                            <img src="{% static 'runner/assets/icons/running.png' %}" width="30px" alt="book">
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h4>Мои первые 10 км за 4 недели</h4>
+                        <p>Платный курс. Только после успешного преодоления дистанции 5км быстрее 35 минут</p>
+                    </div>
+                </div>
+            </a>
+           <a href="#">
+                <div class="g-card runner-card">
+                    <div class="g-side">
+                        <div class="back">
+                            <img src="{% static 'runner/assets/icons/smartwatch.png' %}" width="30px" alt="book">
+                        </div>
+                    </div>
+                    <div class="g-card-body">
+                        <h4>Мой первый полумарафон 21.1 км за 8 недель</h4>
+                        <p>Платный курс. Только после успешного преодоления дистанции 10км быстрее 70 минут</p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</main>
+{% endblock %}
